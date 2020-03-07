@@ -1,0 +1,29 @@
+ 
+<!doctype html>
+<html lang="en">
+
+<head><link rel="stylesheet" type="text/css"></head>
+<title>Information extraction</title>
+<body>
+
+
+        <h2 >文本摘要提取</h2>
+
+      
+        
+                <form action="/abs" method="get">
+						<textarea  name="query" cols="150" rows="15" placeholder="请输入要提取的文本"></textarea>
+
+					<br>	
+                        <button type="submit" >提取摘要</button>
+
+                </form>
+
+        {% block message %}
+        {% endblock %}
+        {% block content %}
+        {% endblock %}
+
+</html>
+
+
